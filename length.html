@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Length Converter - Metric Converter Pro</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="header-top">
+        <div class="logo">
+          <h1>⚖️ Metric Converter Pro</h1>
+          <p>Accurate Unit Conversions & Educational Resources</p>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="conversion.html">Conversion Chart</a></li>
+          <li class="dropdown">
+                        <a >Converters ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="length.html">Length</a></li>
+                            <li><a href="area.html">Area</a></li>
+                            <li><a href="volume.html">Volume</a></li>
+                            <li><a href="mass.html">Mass</a></li>
+                            <li><a href="temperature.html">Temperature</a></li>
+                            <li><a href="currency.html">Currency</a></li>
+                        </ul>
+                    </li>
+
+          <li><a href="history.html">History</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+        <div class="container">
+            <section class="converter-section">
+                <h2>📏 Length Converter</h2>
+                <p style="color: #6b7280; margin-bottom: 32px;">Convert between metric and imperial length units instantly.</p>
+
+                <form class="converter-form" id="lengthConverterForm">
+                    <div class="form-row">
+                        
+                        <div class="form-group">
+                            <label for="lengthFrom">From:</label>
+                            <select id="lengthFrom" required>
+                                <option value="millimeters">Millimeters (mm)</option>
+                                <option value="centimeters">Centimeters (cm)</option>
+                                <option value="meters">Meters (m)</option>
+                                <option value="kilometers">Kilometers (km)</option>
+                                <option value="inches">Inches (in)</option>
+                                <option value="feet" selected>Feet (ft)</option>
+                                <option value="yards">Yards (yd)</option>
+                                <option value="miles">Miles (mi)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="lengthValue">Value:</label>
+                            <input type="number" id="lengthValue" step="any" autofocus placeholder="Enter value" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="lengthTo">To:</label>
+                            <select id="lengthTo" required>
+                                <option value="millimeters">Millimeters (mm)</option>
+                                <option value="centimeters">Centimeters (cm)</option>
+                                <option value="meters" selected>Meters (m)</option>
+                                <option value="kilometers">Kilometers (km)</option>
+                                <option value="inches">Inches (in)</option>
+                                <option value="feet">Feet (ft)</option>
+                                <option value="yards">Yards (yd)</option>
+                                <option value="miles">Miles (mi)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn" style="margin-top: 36px; width: 100%;">Convert</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="result-display" id="lengthResult" style="display: none;">
+                    <h3>Result:</h3>
+                    <div class="result-value" id="lengthResultValue"></div>
+                </div>
+            </section>
+
+            <section class="chart-section">
+                <h3>Common Length Conversions</h3>
+                <table class="conversion-table">
+                    <thead>
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 inch</td>
+                            <td>2.54 cm</td>
+                            <td>12 inches = 30.48 cm</td>
+                        </tr>
+                        <tr>
+                            <td>1 foot</td>
+                            <td>30.48 cm</td>
+                            <td>5 feet = 152.4 cm</td>
+                        </tr>
+                        <tr>
+                            <td>1 yard</td>
+                            <td>0.9144 m</td>
+                            <td>10 yards = 9.144 m</td>
+                        </tr>
+                        <tr>
+                            <td>1 mile</td>
+                            <td>1.609 km</td>
+                            <td>5 miles = 8.045 km</td>
+                        </tr>
+                        <tr>
+                            <td>1 meter</td>
+                            <td>3.281 feet</td>
+                            <td>10 meters = 32.81 feet</td>
+                        </tr>
+                        <tr>
+                            <td>1 kilometer</td>
+                            <td>0.621 miles</td>
+                            <td>10 km = 6.21 miles</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h2>⚖️ Metric Converter Pro</h2>
+      <p>
+        Accurate unit conversions, educational resources, and measurement tools
+        all in one reliable place.
+      </p>
+    </div>
+    <div class="footer-container">
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="conversion.html">Conversion Chart</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Converters -->
+      <div class="footer-links">
+        <h4>Converters</h4>
+        <ul>
+          <li><a href="length.html">Length</a></li>
+          <li><a href="area.html">Area</a></li>
+          <li><a href="volume.html">Volume</a></li>
+          <li><a href="mass.html">Mass</a></li>
+          <li><a href="temperature.html">Temperature</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>🌍 Educational Project</p>
+        <p>📚 Built for students & learners</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy;2026 Metric Converter Pro. All rights reserved.</p>
+      <p>Built for accurate and reliable unit conversions</p>
+    </div>
+  </footer>
+<script src="JS/main.js"></script>
+<script src="JS/converter.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter - Metric Converter Pro</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+      <header>
+        <div class="header-content">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>⚖️ Metric Converter Pro</h1>
+                    <p>Accurate Unit Conversions & Educational Resources</p>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="conversion.html">Conversion Chart</a></li>
+                    <li class="dropdown">
+                        <a >Converters ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="length.html">Length</a></li>
+                            <li><a href="area.html">Area</a></li>
+                            <li><a href="volume.html">Volume</a></li>
+                            <li><a href="mass.html">Mass</a></li>
+                            <li><a href="temperature.html">Temperature</a></li>
+                            <li><a href="currency.html">Currency</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+     <main>
+        <div class="container">
+            <section class="converter-section">
+                <h2>💱 Currency Converter</h2>
+                <p style="color: #6b7280; margin-bottom: 32px;">Convert between major world currencies with live exchange rates.</p>
+
+                <form class="converter-form" id="currencyConverterForm">
+                    <div class="form-row">
+                        
+                        <div class="form-group">
+                            <label for="currencyFrom">From:</label>
+                            <select id="currencyFrom" required>
+                                <option value="USD" selected>US Dollar (USD)</option>
+                                <option value="EUR">Euro (EUR)</option>
+                                <option value="GBP">British Pound (GBP)</option>
+                                <option value="JPY">Japanese Yen (JPY)</option>
+                                <option value="CNY">Chinese Yuan (CNY)</option>
+                                <option value="CAD">Canadian Dollar (CAD)</option>
+                                <option value="AUD">Australian Dollar (AUD)</option>
+                                <option value="CHF">Swiss Franc (CHF)</option>
+                                <option value="INR">Indian Rupee (INR)</option>
+                                <option value="MXN">Mexican Peso (MXN)</option>
+                                <option value="BRL">Brazilian Real (BRL)</option>
+                                <option value="ZAR">South African Rand (ZAR)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="currencyValue">Amount:</label>
+                            <input type="number" id="currencyValue" step="any" autofocus placeholder="Enter amount" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="currencyTo">To:</label>
+                            <select id="currencyTo" required>
+                                <option value="USD">US Dollar (USD)</option>
+                                <option value="EUR" selected>Euro (EUR)</option>
+                                <option value="GBP">British Pound (GBP)</option>
+                                <option value="JPY">Japanese Yen (JPY)</option>
+                                <option value="CNY">Chinese Yuan (CNY)</option>
+                                <option value="CAD">Canadian Dollar (CAD)</option>
+                                <option value="AUD">Australian Dollar (AUD)</option>
+                                <option value="CHF">Swiss Franc (CHF)</option>
+                                <option value="INR">Indian Rupee (INR)</option>
+                                <option value="MXN">Mexican Peso (MXN)</option>
+                                <option value="BRL">Brazilian Real (BRL)</option>
+                                <option value="ZAR">South African Rand (ZAR)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn" style="margin-top: 36px; width: 100%;">Convert</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="result-display" id="currencyResult" style="display: none;">
+                    <h3>Result:</h3>
+                    <div class="result-value" id="currencyResultValue"></div>
+                    <p style="margin-top: 16px; font-size: 14px; color: #6b7280;" id="currencyRate"></p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 32px;">
+                    <h3 style="color: #2563eb; margin-top: 0;">ℹ️ About Currency Conversion</h3>
+                    <p><strong>Note:</strong> This currency converter uses approximate exchange rates for demonstration purposes. The rates shown are based on recent historical data and may not reflect current live market rates.</p>
+                    <p><strong>For actual currency exchange:</strong> Please consult your bank or a licensed currency exchange service for real-time rates and official transactions.</p>
+                    <p><strong>Exchange rates fluctuate:</strong> Currency values change constantly based on market conditions, economic factors, and geopolitical events.</p>
+                </div>
+            </section>
+
+            <section class="chart-section">
+                <h3>Major Currency Pairs (Approximate Rates)</h3>
+                <table class="conversion-table">
+                    <thead>
+                        <tr>
+                            <th>Currency Pair</th>
+                            <th>Approximate Rate</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>USD to EUR</td>
+                            <td>1 USD ≈ 0.92 EUR</td>
+                            <td>100 USD ≈ 92 EUR</td>
+                        </tr>
+                        <tr>
+                            <td>EUR to USD</td>
+                            <td>1 EUR ≈ 1.09 USD</td>
+                            <td>100 EUR ≈ 109 USD</td>
+                        </tr>
+                        <tr>
+                            <td>USD to GBP</td>
+                            <td>1 USD ≈ 0.79 GBP</td>
+                            <td>100 USD ≈ 79 GBP</td>
+                        </tr>
+                        <tr>
+                            <td>USD to JPY</td>
+                            <td>1 USD ≈ 149 JPY</td>
+                            <td>100 USD ≈ 14,900 JPY</td>
+                        </tr>
+                        <tr>
+                            <td>USD to CNY</td>
+                            <td>1 USD ≈ 7.24 CNY</td>
+                            <td>100 USD ≈ 724 CNY</td>
+                        </tr>
+                        <tr>
+                            <td>USD to INR</td>
+                            <td>1 USD ≈ 83 INR</td>
+                            <td>100 USD ≈ 8,300 INR</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+         <!-- Footer -->
+    <footer class="footer">
+        <!-- Brand -->
+    <div class="footer-brand">
+      <h2>⚖️ Metric Converter Pro</h2>
+      <p>
+        Accurate unit conversions, educational resources, and measurement tools
+        all in one reliable place.
+      </p>
+    </div>
+     <div class="footer-container">
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="conversion.html">Conversion Chart</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+
+    <!-- Converters -->
+    <div class="footer-links">
+      <h4>Converters</h4>
+      <ul>
+        <li><a href="length.html">Length</a></li>
+        <li><a href="area.html">Area</a></li>
+        <li><a href="volume.html">Volume</a></li>
+        <li><a href="mass.html">Mass</a></li>
+        <li><a href="temperature.html">Temperature</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>🌍 Educational Project</p>
+      <p>📚 Built for students & learners</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy;2026 Metric Converter Pro. All rights reserved.</p>
+    <p>Built for accurate and reliable unit conversions</p>
+  </div>
+</footer>
+<script src="JS/main.js"></script>
+<script src="JS/converter.js"></script>
+    </body>
+
+</html>

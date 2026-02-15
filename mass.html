@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Converter - Metric Converter Pro</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+      <header>
+        <div class="header-content">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>⚖️ Metric Converter Pro</h1>
+                    <p>Accurate Unit Conversions & Educational Resources</p>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="conversion.html">Conversion Chart</a></li>
+                    <li class="dropdown">
+                        <a >Converters ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="length.html">Length</a></li>
+                            <li><a href="area.html">Area</a></li>
+                            <li><a href="volume.html">Volume</a></li>
+                            <li><a href="mass.html">Mass</a></li>
+                            <li><a href="temperature.html">Temperature</a></li>
+                            <li><a href="currency.html">Currency</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="converter-section">
+                <h2>⚖️ Mass Converter</h2>
+                <p style="color: #6b7280; margin-bottom: 32px;">Convert between metric and imperial mass/weight units instantly.</p>
+
+                <form class="converter-form" id="massConverterForm">
+                    <div class="form-row">
+                        
+                        <div class="form-group">
+                            <label for="massFrom">From:</label>
+                            <select id="massFrom" required>
+                                <option value="milligrams">Milligrams (mg)</option>
+                                <option value="grams">Grams (g)</option>
+                                <option value="kilograms" selected>Kilograms (kg)</option>
+                                <option value="metricTons">Metric Tons (t)</option>
+                                <option value="ounces">Ounces (oz)</option>
+                                <option value="pounds">Pounds (lb)</option>
+                                <option value="shortTons">Short Tons (2000 lb)</option>
+                                <option value="longTons">Long Tons (2240 lb)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="massValue">Value:</label>
+                            <input type="number" id="massValue" step="any" autofocus placeholder="Enter value" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="massTo">To:</label>
+                            <select id="massTo" required>
+                                <option value="milligrams">Milligrams (mg)</option>
+                                <option value="grams">Grams (g)</option>
+                                <option value="kilograms">Kilograms (kg)</option>
+                                <option value="metricTons">Metric Tons (t)</option>
+                                <option value="ounces">Ounces (oz)</option>
+                                <option value="pounds" selected>Pounds (lb)</option>
+                                <option value="shortTons">Short Tons (2000 lb)</option>
+                                <option value="longTons">Long Tons (2240 lb)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn" style="margin-top: 36px; width: 100%;">Convert</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="result-display" id="massResult" style="display: none;">
+                    <h3>Result:</h3>
+                    <div class="result-value" id="massResultValue"></div>
+                </div>
+            </section>
+
+            <section class="chart-section">
+                <h3>Common Mass Conversions</h3>
+                <table class="conversion-table">
+                    <thead>
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 ounce</td>
+                            <td>28.35 g</td>
+                            <td>16 oz = 453.6 g</td>
+                        </tr>
+                        <tr>
+                            <td>1 pound</td>
+                            <td>0.4536 kg</td>
+                            <td>10 lb = 4.536 kg</td>
+                        </tr>
+                        <tr>
+                            <td>1 short ton</td>
+                            <td>0.9072 metric tons</td>
+                            <td>5 short tons = 4.536 metric tons</td>
+                        </tr>
+                        <tr>
+                            <td>1 kilogram</td>
+                            <td>2.205 lb</td>
+                            <td>10 kg = 22.05 lb</td>
+                        </tr>
+                        <tr>
+                            <td>1 metric ton</td>
+                            <td>1.102 short tons</td>
+                            <td>5 metric tons = 5.511 short tons</td>
+                        </tr>
+                        <tr>
+                            <td>1 long ton</td>
+                            <td>1.016 metric tons</td>
+                            <td>2 long tons = 2.032 metric tons</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+ <!-- Footer -->
+    <footer class="footer">
+        <!-- Brand -->
+    <div class="footer-brand">
+      <h2>⚖️ Metric Converter Pro</h2>
+      <p>
+        Accurate unit conversions, educational resources, and measurement tools
+        all in one reliable place.
+      </p>
+    </div>
+     <div class="footer-container">
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="conversion.html">Conversion Chart</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+
+    <!-- Converters -->
+    <div class="footer-links">
+      <h4>Converters</h4>
+      <ul>
+        <li><a href="length.html">Length</a></li>
+        <li><a href="area.html">Area</a></li>
+        <li><a href="volume.html">Volume</a></li>
+        <li><a href="mass.html">Mass</a></li>
+        <li><a href="temperature.html">Temperature</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>🌍 Educational Project</p>
+      <p>📚 Built for students & learners</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy;2026 Metric Converter Pro. All rights reserved.</p>
+    <p>Built for accurate and reliable unit conversions</p>
+  </div>
+</footer>
+<script src="JS/main.js"></script>
+<script src="JS/converter.js"></script>
+    </body>
+
+</html>

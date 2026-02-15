@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Metric Converter Pro</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>⚖️ Metric Converter Pro</h1>
+                    <p>Accurate Unit Conversions & Educational Resources</p>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="conversion.html">Conversion Chart</a></li>
+                    <li class="dropdown">
+                        <a>Converters ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="length.html">Length</a></li>
+                            <li><a href="area.html">Area</a></li>
+                            <li><a href="volume.html">Volume</a></li>
+                            <li><a href="mass.html">Mass</a></li>
+                            <li><a href="temperature.html">Temperature</a></li>
+                            <li><a href="currency.html">Currency</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="faq-section">
+                <h1 style="color: #2563eb; text-align: center; margin-bottom: 32px;">❓ Frequently Asked Questions</h1>
+                <p style="text-align: center; color: #6b7280; margin-bottom: 3rem;">Find answers to common questions about unit conversions and measurement systems.</p>
+
+                <div class="faq-item">
+                    <h2 class="faq-question">How do I enter numbers in Scientific Notation?</h2>
+                    <div class="faq-answer">
+                        <p><strong>Answer:</strong> Scientific notation is a way to express very large or very small numbers in a compact form. Here's how to work with it:</p>
+                        
+                        <p><strong>Format:</strong> Scientific notation uses the format: <code>a × 10^b</code> or <code>a E b</code></p>
+                        
+                        <p><strong>Examples:</strong></p>
+                        <ul>
+                            <li>3,000,000 = 3 × 10^6 = 3E6</li>
+                            <li>0.000045 = 4.5 × 10^-5 = 4.5E-5</li>
+                            <li>6.02 × 10^23 (Avogadro's number) = 6.02E23</li>
+                        </ul>
+
+                        <p><strong>In our converters:</strong></p>
+                        <ul>
+                            <li>Simply type the number in standard form (e.g., 3000000 or 0.000045)</li>
+                            <li>Or use the E notation: type "3E6" for 3 × 10^6</li>
+                            <li>The calculator will automatically recognize and process both formats</li>
+                        </ul>
+
+                        <p><strong>Calculator Entry:</strong></p>
+                        <ul>
+                            <li>Most calculators have an "EXP" or "EE" button for scientific notation</li>
+                            <li>Type the coefficient first (3), then press EXP, then the exponent (6)</li>
+                            <li>For negative exponents: 4.5 EXP -5 gives 4.5 × 10^-5</li>
+                        </ul>
+
+                        <p><strong>Why use scientific notation?</strong></p>
+                        <ul>
+                            <li>Easier to read very large or small numbers</li>
+                            <li>Clearly shows significant figures</li>
+                            <li>Essential in science and engineering</li>
+                            <li>Prevents errors with many zeros</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <p><strong>Quick Reference:</strong></p>
+                            <ul>
+                                <li>10^3 = 1,000 (thousand)</li>
+                                <li>10^6 = 1,000,000 (million)</li>
+                                <li>10^9 = 1,000,000,000 (billion)</li>
+                                <li>10^-3 = 0.001 (thousandth)</li>
+                                <li>10^-6 = 0.000001 (millionth)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h2 class="faq-question">What is a knot? What is a nautical mile?</h2>
+                    <div class="faq-answer">
+                        <p><strong>Answer:</strong> Knots and nautical miles are specialized units used in maritime and aviation contexts.</p>
+                        
+                        <h3 style="color:#2563eb; margin-top: 16px;">The Nautical Mile</h3>
+                        <p>A <strong>nautical mile</strong> is a unit of distance used in maritime and air navigation. It has a special relationship to Earth's geometry:</p>
+                        <ul>
+                            <li><strong>Definition:</strong> One nautical mile equals exactly 1,852 meters (about 6,076 feet)</li>
+                            <li><strong>Origin:</strong> Based on one minute of arc along Earth's meridian (1/60 of a degree of latitude)</li>
+                            <li><strong>Comparison:</strong> A nautical mile is about 1.15 statute miles (land miles)</li>
+                        </ul>
+
+                        <p><strong>Why use nautical miles?</strong></p>
+                        <ul>
+                            <li>Directly relates to latitude and longitude coordinates</li>
+                            <li>Simplifies navigation calculations on charts</li>
+                            <li>One degree of latitude = 60 nautical miles</li>
+                            <li>Makes position plotting easier on navigation maps</li>
+                        </ul>
+
+                        <h3 style="color:#2563eb; margin-top: 24px;">The Knot</h3>
+                        <p>A <strong>knot</strong> is a unit of speed equal to one nautical mile per hour.</p>
+                        <ul>
+                            <li><strong>Definition:</strong> 1 knot = 1 nautical mile per hour</li>
+                            <li><strong>Symbol:</strong> kn or kt</li>
+                            <li><strong>Conversion:</strong> 1 knot ≈ 1.15 mph ≈ 1.85 km/h</li>
+                        </ul>
+
+                        <p><strong>Origin of the term "knot":</strong></p>
+                        <p>The term comes from an ancient maritime speed measurement method. Sailors would throw overboard a "chip log" (a wooden board) attached to a rope with knots tied at regular intervals. As the ship moved forward, they counted how many knots passed through their hands in a specific time (measured with a sandglass). The number of knots counted gave the ship's speed.</p>
+
+                        <p><strong>Common Usage:</strong></p>
+                        <ul>
+                            <li>Ship speeds: "The ship is traveling at 20 knots"</li>
+                            <li>Aircraft speeds (below Mach speeds)</li>
+                            <li>Wind speeds in aviation and sailing</li>
+                            <li>Ocean current speeds</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <p><strong>Important Note:</strong> Never say "knots per hour"! Since a knot already means nautical miles per hour, saying "knots per hour" is like saying "miles per hour per hour." Just say "knots" when referring to speed.</p>
+                        </div>
+
+                        <p><strong>Speed Comparisons:</strong></p>
+                        <ul>
+                            <li>Walking speed: ~2-3 knots</li>
+                            <li>Recreational sailboat: 5-8 knots</li>
+                            <li>Container ship: 15-25 knots</li>
+                            <li>Fast ferry: 30-40 knots</li>
+                            <li>Commercial aircraft cruise: 450-500 knots</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h2 class="faq-question">What about rainfall? How do I convert between inches of rain, and millimeters of rain?</h2>
+                    <div class="faq-answer">
+                        <p><strong>Answer:</strong> Rainfall measurements are actually linear depth measurements, not volume, which makes conversion straightforward.</p>
+                        
+                        <h3 style="color: #2563eb; margin-top: 16px;">Understanding Rainfall Measurement</h3>
+                        <p>When meteorologists report "2 inches of rain," they mean that if all the rain that fell was caught and contained, it would form a layer 2 inches deep. This is why rainfall uses length units rather than volume units.</p>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Conversion</h3>
+                        <p>Since rainfall is a depth measurement, you simply use standard length conversions:</p>
+                        <ul>
+                            <li><strong>Inches to millimeters:</strong> Multiply by 25.4</li>
+                            <li><strong>Millimeters to inches:</strong> Multiply by 0.03937 (or divide by 25.4)</li>
+                        </ul>
+
+                        <p><strong>Examples:</strong></p>
+                        <ul>
+                            <li>1 inch of rain = 25.4 mm of rain</li>
+                            <li>2 inches of rain = 50.8 mm of rain</li>
+                            <li>10 mm of rain = 0.394 inches of rain</li>
+                            <li>100 mm of rain = 3.94 inches of rain</li>
+                        </ul>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Rainfall Intensity Classifications</h3>
+                        
+                        <p><strong>Light Rain:</strong></p>
+                        <ul>
+                            <li>Less than 0.10 inch per hour (2.5 mm/hr)</li>
+                            <li>Gentle, barely measurable precipitation</li>
+                        </ul>
+
+                        <p><strong>Moderate Rain:</strong></p>
+                        <ul>
+                            <li>0.10 to 0.30 inches per hour (2.5-7.6 mm/hr)</li>
+                            <li>Steady rain, puddles form slowly</li>
+                        </ul>
+
+                        <p><strong>Heavy Rain:</strong></p>
+                        <ul>
+                            <li>More than 0.30 inches per hour (7.6 mm/hr)</li>
+                            <li>Rapid puddle formation, reduced visibility</li>
+                        </ul>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Total Rainfall Benchmarks</h3>
+                        
+                        <table class="conversion-table" style="margin-top: 16px;">
+                            <thead>
+                                <tr>
+                                    <th>Inches</th>
+                                    <th>Millimeters</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0.01</td>
+                                    <td>0.25</td>
+                                    <td>Trace - barely measurable</td>
+                                </tr>
+                                <tr>
+                                    <td>0.10</td>
+                                    <td>2.5</td>
+                                    <td>Light rain</td>
+                                </tr>
+                                <tr>
+                                    <td>0.50</td>
+                                    <td>12.7</td>
+                                    <td>Moderate rainfall</td>
+                                </tr>
+                                <tr>
+                                    <td>1.00</td>
+                                    <td>25.4</td>
+                                    <td>Significant rain event</td>
+                                </tr>
+                                <tr>
+                                    <td>2.00</td>
+                                    <td>50.8</td>
+                                    <td>Heavy rainfall, possible flooding</td>
+                                </tr>
+                                <tr>
+                                    <td>5.00</td>
+                                    <td>127</td>
+                                    <td>Very heavy rain, likely flooding</td>
+                                </tr>
+                                <tr>
+                                    <td>10.00</td>
+                                    <td>254</td>
+                                    <td>Extreme rainfall, severe flooding</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Why Depth Instead of Volume?</h3>
+                        <p>Rainfall is measured as depth rather than volume because:</p>
+                        <ul>
+                            <li>It's independent of the size of the collection area</li>
+                            <li>Easy to compare across different locations</li>
+                            <li>Simple to measure with a rain gauge</li>
+                            <li>Directly indicates accumulation on the ground</li>
+                        </ul>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Converting to Volume</h3>
+                        <p>If you need to know the actual volume of rain that fell over a specific area:</p>
+                        <ul>
+                            <li><strong>Formula:</strong> Volume = Rainfall depth × Area</li>
+                            <li><strong>Example:</strong> 1 inch of rain over 1 acre = 27,154 gallons</li>
+                            <li><strong>Metric example:</strong> 10 mm of rain over 1 hectare = 100 cubic meters = 100,000 liters</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <p><strong>Interesting Fact:</strong> The world's rainiest place is Mawsynram, India, with an average annual rainfall of about 467 inches (11,871 mm). The wettest place in the United States is Mount Waialeale in Hawaii, averaging about 460 inches (11,684 mm) per year. In contrast, Death Valley, California receives less than 2 inches (50 mm) annually.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h2 class="faq-question">What is the difference between the long ton, short ton, and metric ton?</h2>
+                    <div class="faq-answer">
+                        <p><strong>Answer:</strong> There are three different types of "ton" in use around the world, each with a different weight. This can cause significant confusion in international commerce and requires careful attention.</p>
+                        
+                        <h3 style="color: #2563eb; margin-top: 16px;">1. Short Ton (U.S. Ton)</h3>
+                        <p><strong>Also called:</strong> Net ton, U.S. ton</p>
+                        <p><strong>Weight:</strong> 2,000 pounds (exactly)</p>
+                        <p><strong>Metric equivalent:</strong> 907.185 kilograms</p>
+                        <p><strong>Used in:</strong> United States and Canada</p>
+                        
+                        <p><strong>Common uses:</strong></p>
+                        <ul>
+                            <li>Freight and cargo shipping in North America</li>
+                            <li>Vehicle weight ratings (pickup truck capacity)</li>
+                            <li>Agricultural commodities (grain, livestock)</li>
+                            <li>Mining and construction materials</li>
+                        </ul>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">2. Long Ton (Imperial Ton)</h3>
+                        <p><strong>Also called:</strong> Gross ton, British ton, Imperial ton</p>
+                        <p><strong>Weight:</strong> 2,240 pounds</p>
+                        <p><strong>Metric equivalent:</strong> 1,016.05 kilograms</p>
+                        <p><strong>Used in:</strong> United Kingdom (historically, now largely replaced by metric ton)</p>
+                        
+                        <p><strong>Historical note:</strong> The long ton was part of the British Imperial system. It equals 20 hundredweight (cwt), where 1 cwt = 112 pounds. While still recognized, it's rarely used in modern commerce, having been largely replaced by the metric tonne.</p>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">3. Metric Ton (Tonne)</h3>
+                        <p><strong>Also called:</strong> Tonne (to distinguish it from short/long ton)</p>
+                        <p><strong>Weight:</strong> 1,000 kilograms (exactly)</p>
+                        <p><strong>Equivalent to:</strong> 2,204.62 pounds</p>
+                        <p><strong>Used in:</strong> Worldwide, especially in countries using the metric system</p>
+                        
+                        <p><strong>Common uses:</strong></p>
+                        <ul>
+                            <li>International shipping and trade</li>
+                            <li>Scientific and technical applications</li>
+                            <li>Manufacturing and production quotas</li>
+                            <li>Environmental measurements (CO₂ emissions)</li>
+                            <li>Official statistics in most countries</li>
+                        </ul>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Quick Comparison Table</h3>
+                        <table class="conversion-table" style="margin-top: 16px;">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Pounds</th>
+                                    <th>Kilograms</th>
+                                    <th>Percentage of Metric Ton</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Short Ton</strong></td>
+                                    <td>2,000</td>
+                                    <td>907.185</td>
+                                    <td>90.7%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Long Ton</strong></td>
+                                    <td>2,240</td>
+                                    <td>1,016.05</td>
+                                    <td>101.6%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Metric Ton</strong></td>
+                                    <td>2,204.62</td>
+                                    <td>1,000</td>
+                                    <td>100%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Conversion Between Tons</h3>
+                        
+                        <p><strong>From Short Tons:</strong></p>
+                        <ul>
+                            <li>To Long Tons: Multiply by 0.892857</li>
+                            <li>To Metric Tons: Multiply by 0.907185</li>
+                        </ul>
+
+                        <p><strong>From Long Tons:</strong></p>
+                        <ul>
+                            <li>To Short Tons: Multiply by 1.12</li>
+                            <li>To Metric Tons: Multiply by 1.01605</li>
+                        </ul>
+
+                        <p><strong>From Metric Tons:</strong></p>
+                        <ul>
+                            <li>To Short Tons: Multiply by 1.10231</li>
+                            <li>To Long Tons: Multiply by 0.984207</li>
+                        </ul>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Practical Examples</h3>
+                        
+                        <p><strong>Example 1: Container Ship Capacity</strong></p>
+                        <p>A container ship with a capacity of 10,000 tons:</p>
+                        <ul>
+                            <li>If measured in short tons: 9,071,850 kg (9,072 metric tons)</li>
+                            <li>If measured in long tons: 10,160,470 kg (10,160 metric tons)</li>
+                            <li>If measured in metric tons: 10,000,000 kg exactly</li>
+                        </ul>
+                        <p>This represents a difference of over 1,000 metric tons—a significant error in shipping calculations!</p>
+
+                        <p><strong>Example 2: Coal Production</strong></p>
+                        <p>A mine producing 1 million tons annually:</p>
+                        <ul>
+                            <li>1 million short tons = 907,185 metric tons</li>
+                            <li>1 million long tons = 1,016,047 metric tons</li>
+                            <li>1 million metric tons = 1,000,000 metric tons</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <p><strong>Important for International Trade:</strong> Always specify which type of ton you're using in contracts and documentation! The difference between short and long tons is 12%, and between short and metric tons is about 10%. These differences can represent millions of dollars in large shipments. When in doubt, use kilograms or metric tons to avoid ambiguity.</p>
+                        </div>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Etymology</h3>
+                        <p>The word "ton" comes from "tun," a large cask used to transport wine. A tun of wine weighed approximately 2,000 pounds, which became the basis for the short ton. The long ton developed from the British system where 20 hundredweight (each 112 pounds) made one ton.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h2 class="faq-question">At what temperature are Celsius and Fahrenheit the same?</h2>
+                    <div class="faq-answer">
+                        <p><strong>Answer:</strong> Celsius and Fahrenheit are equal at exactly <strong>-40 degrees</strong> (both -40°C and -40°F).</p>
+                        
+                        <h3 style="color: #2563eb; margin-top: 16px;">Mathematical Explanation</h3>
+                        <p>To find this intersection point, we use the conversion formulas and set them equal:</p>
+                        
+                        <p><strong>Conversion formulas:</strong></p>
+                        <ul>
+                            <li>°F = (°C × 9/5) + 32</li>
+                            <li>°C = (°F - 32) × 5/9</li>
+                        </ul>
+
+                        <p><strong>Setting Celsius equal to Fahrenheit:</strong></p>
+                        <p>Let x be the temperature where both scales are equal:</p>
+                        <p>x = (x × 9/5) + 32</p>
+                        <p>x = 1.8x + 32</p>
+                        <p>x - 1.8x = 32</p>
+                        <p>-0.8x = 32</p>
+                        <p>x = -40</p>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Why This Matters</h3>
+                        <p>This unique point of intersection is more than just mathematical curiosity:</p>
+                        <ul>
+                            <li><strong>Extreme cold reference:</strong> -40° is extremely cold by any standard</li>
+                            <li><strong>Weather records:</strong> Some of the coldest recorded temperatures approach this value</li>
+                            <li><strong>Scientific importance:</strong> At this temperature, certain materials and chemicals behave similarly</li>
+                            <li><strong>Practical uses:</strong> Industrial processes in arctic conditions</li>
+                        </ul>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Temperature Perspective</h3>
+                        <p>To understand how cold -40° is:</p>
+                        <ul>
+                            <li>Water freezes at 32°F (0°C)</li>
+                            <li>-40° is 72 degrees below freezing on the Fahrenheit scale</li>
+                            <li>Most frostbite occurs within minutes at this temperature</li>
+                            <li>Exposed skin can freeze in under 5 minutes</li>
+                            <li>Many common materials become brittle</li>
+                            <li>Car engines may not start without specialized equipment</li>
+                        </ul>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Where Does -40° Occur?</h3>
+                        <p>This extreme temperature is encountered in:</p>
+                        <ul>
+                            <li><strong>Antarctica:</strong> Winter temperatures regularly reach this level</li>
+                            <li><strong>Arctic regions:</strong> Northern Canada, Siberia, Alaska</li>
+                            <li><strong>High altitude:</strong> Extreme elevations can reach these temperatures</li>
+                            <li><strong>Record lows:</strong> Occasionally recorded in northern U.S. states and Canada</li>
+                        </ul>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Temperature Comparison Chart</h3>
+                        <table class="conversion-table" style="margin-top: 1rem;">
+                            <thead>
+                                <tr>
+                                    <th>Celsius</th>
+                                    <th>Fahrenheit</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background-color: #fff3cd;">
+                                    <td><strong>-40°C</strong></td>
+                                    <td><strong>-40°F</strong></td>
+                                    <td><strong>The intersection point!</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>-30°C</td>
+                                    <td>-22°F</td>
+                                    <td>Extremely cold</td>
+                                </tr>
+                                <tr>
+                                    <td>-20°C</td>
+                                    <td>-4°F</td>
+                                    <td>Very cold winter day</td>
+                                </tr>
+                                <tr>
+                                    <td>-10°C</td>
+                                    <td>14°F</td>
+                                    <td>Cold winter day</td>
+                                </tr>
+                                <tr>
+                                    <td>0°C</td>
+                                    <td>32°F</td>
+                                    <td>Water freezes</td>
+                                </tr>
+                                <tr>
+                                    <td>10°C</td>
+                                    <td>50°F</td>
+                                    <td>Cool day</td>
+                                </tr>
+                                <tr>
+                                    <td>20°C</td>
+                                    <td>68°F</td>
+                                    <td>Room temperature</td>
+                                </tr>
+                                <tr>
+                                    <td>37°C</td>
+                                    <td>98.6°F</td>
+                                    <td>Human body temperature</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Other Interesting Temperature Facts</h3>
+                        
+                        <p><strong>Coldest Temperature Recorded:</strong></p>
+                        <ul>
+                            <li>Earth: -128.6°F (-89.2°C) at Vostok Station, Antarctica (July 21, 1983)</li>
+                            <li>This is nearly 90 degrees colder than the -40° intersection point!</li>
+                        </ul>
+
+                        <p><strong>Absolute Zero:</strong></p>
+                        <ul>
+                            <li>The theoretical lowest temperature: -273.15°C or -459.67°F</li>
+                            <li>At absolute zero, molecular motion theoretically stops</li>
+                            <li>This is approximately 233 degrees below the -40° intersection!</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <p><strong>Fun Fact:</strong> The -40° intersection point is the only whole number temperature where Celsius and Fahrenheit are equal. While the scales intersect at exactly -40°, they never meet again at any other temperature. As you move away from -40° in either direction, the difference between the scales grows larger and larger.</p>
+                        </div>
+
+                        <h3 style="color: #2563eb; margin-top: 24px;">Practical Tip</h3>
+                        <p>When someone mentions a temperature of -40°, you don't need to ask "Celsius or Fahrenheit?"—it's the same either way! This makes -40° a convenient reference point when discussing extreme cold with people who use different temperature scales.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h2 class="faq-question">How accurate are the conversions on this website?</h2>
+                    <div class="faq-answer">
+                        <p><strong>Answer:</strong> Our converters use internationally recognized conversion factors maintained by standards organizations like NIST (National Institute of Standards and Technology) and BIPM (International Bureau of Weights and Measures). All conversions are accurate to at least 6-8 significant figures, which exceeds the precision needed for virtually all everyday and most scientific applications.</p>
+                        
+                        <p>The conversion factors are based on the official definitions where U.S. customary units are defined in terms of SI units (e.g., 1 inch = exactly 2.54 centimeters).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h2 class="faq-question">Why are there different types of gallons and ounces?</h2>
+                    <div class="faq-answer">
+                        <p><strong>Answer:</strong> The U.S. gallon and British Imperial gallon diverged in 1824 when Britain standardized their Imperial system, while the U.S. continued using earlier definitions. The U.S. gallon (3.785 L) is based on the old wine gallon, while the Imperial gallon (4.546 L) is based on the volume of 10 pounds of water. This 20% difference can cause confusion in international contexts.</p>
+                        
+                        <p>Similarly, fluid ounces differ because they are derived from their respective gallons (1 gallon = 128 fluid ounces in both systems, but the gallon itself differs).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h2 class="faq-question">What's the difference between mass and weight?</h2>
+                    <div class="faq-answer">
+                        <p><strong>Answer:</strong> Although often used interchangeably in everyday language, mass and weight are different:</p>
+                        
+                        <ul>
+                            <li><strong>Mass:</strong> The amount of matter in an object, measured in kilograms or pounds. Mass is constant regardless of location.</li>
+                            <li><strong>Weight:</strong> The force exerted on an object due to gravity, measured in newtons or pounds-force. Weight changes with gravitational strength.</li>
+                        </ul>
+                        
+                        <p>On Earth's surface, the distinction is often ignored for practical purposes, but it becomes important in space or on other planets. An astronaut's mass remains the same on the Moon, but their weight is only 1/6 of what it is on Earth.</p>
+                        
+                        <p>In everyday use, "pounds" and "kilograms" technically measure mass, even though we often refer to them as measurements of weight.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h2 class="faq-question">Why does the U.S. still use imperial units instead of metric?</h2>
+                    <div class="faq-answer">
+                        <p><strong>Answer:</strong> The U.S. actually uses a mix of both systems, and has been officially "metric" since 1975, but conversion remains incomplete due to several factors:</p>
+                        
+                        <ul>
+                            <li><strong>Infrastructure costs:</strong> Replacing millions of road signs, updating building codes, and retooling manufacturing would cost billions</li>
+                            <li><strong>Public resistance:</strong> Generations of Americans are comfortable with traditional units</li>
+                            <li><strong>Voluntary adoption:</strong> The Metric Conversion Act of 1975 made metrication voluntary rather than mandatory</li>
+                            <li><strong>Economic considerations:</strong> Many industries operate in both systems already</li>
+                            <li><strong>Cultural identity:</strong> Traditional units are deeply embedded in American language and culture</li>
+                        </ul>
+                        
+                        <p>Interestingly, the U.S. does use metric extensively in science, medicine, military, and many industries. Even U.S. customary units are now officially defined in terms of metric units!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main> 
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Brand -->
+    <div class="footer-brand">
+      <h2>⚖️ Metric Converter Pro</h2>
+      <p>
+        Accurate unit conversions, educational resources, and measurement tools
+        all in one reliable place.
+      </p>
+    </div>
+     <div class="footer-container">
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="conversion.html">Conversion Chart</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+
+    <!-- Converters -->
+    <div class="footer-links">
+      <h4>Converters</h4>
+      <ul>
+        <li><a href="length.html">Length</a></li>
+        <li><a href="area.html">Area</a></li>
+        <li><a href="volume.html">Volume</a></li>
+        <li><a href="mass.html">Mass</a></li>
+        <li><a href="temperature.html">Temperature</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>🌍 Educational Project</p>
+      <p>📚 Built for students & learners</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy;2026 Metric Converter Pro. All rights reserved.</p>
+    <p>Built for accurate and reliable unit conversions</p>
+  </div>
+</footer>
+<script src="JS/main.js"></script>
+</body>
+
+</html>

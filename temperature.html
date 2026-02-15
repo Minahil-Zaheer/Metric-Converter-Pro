@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter - Metric Converter Pro</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+      <header>
+        <div class="header-content">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>⚖️ Metric Converter Pro</h1>
+                    <p>Accurate Unit Conversions & Educational Resources</p>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="conversion.html">Conversion Chart</a></li>
+                    <li class="dropdown">
+                        <a >Converters ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="length.html">Length</a></li>
+                            <li><a href="area.html">Area</a></li>
+                            <li><a href="volume.html">Volume</a></li>
+                            <li><a href="mass.html">Mass</a></li>
+                            <li><a href="temperature.html">Temperature</a></li>
+                            <li><a href="currency.html">Currency</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="converter-section">
+                <h2>🌡️ Temperature Converter</h2>
+                <p style="color: #6b7280; margin-bottom: 32px;">Convert between Fahrenheit, Celsius, and Kelvin temperature scales.</p>
+
+                <form class="converter-form" id="temperatureConverterForm">
+                    <div class="form-row">
+                        
+                        <div class="form-group">
+                            <label for="temperatureFrom">From:</label>
+                            <select id="temperatureFrom" required>
+                                <option value="celsius" selected>Celsius (°C)</option>
+                                <option value="fahrenheit">Fahrenheit (°F)</option>
+                                <option value="kelvin">Kelvin (K)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="temperatureValue">Value:</label>
+                            <input type="number" id="temperatureValue" step="any" autofocus placeholder="Enter value" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="temperatureTo">To:</label>
+                            <select id="temperatureTo" required>
+                                <option value="celsius">Celsius (°C)</option>
+                                <option value="fahrenheit" selected>Fahrenheit (°F)</option>
+                                <option value="kelvin">Kelvin (K)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn" style="margin-top: 36px; width: 100%;">Convert</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="result-display" id="temperatureResult" style="display: none;">
+                    <h3>Result:</h3>
+                    <div class="result-value" id="temperatureResultValue"></div>
+                </div>
+            </section>
+
+            <section class="chart-section">
+                <h3>Temperature Conversion Formulas</h3>
+                <table class="conversion-table">
+                    <thead>
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Formula</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Celsius</td>
+                            <td>Fahrenheit</td>
+                            <td class="factor">(°C × 9/5) + 32</td>
+                        </tr>
+                        <tr>
+                            <td>Fahrenheit</td>
+                            <td>Celsius</td>
+                            <td class="factor">(°F - 32) × 5/9</td>
+                        </tr>
+                        <tr>
+                            <td>Celsius</td>
+                            <td>Kelvin</td>
+                            <td class="factor">°C + 273.15</td>
+                        </tr>
+                        <tr>
+                            <td>Kelvin</td>
+                            <td>Celsius</td>
+                            <td class="factor">K - 273.15</td>
+                        </tr>
+                        <tr>
+                            <td>Fahrenheit</td>
+                            <td>Kelvin</td>
+                            <td class="factor">(°F - 32) × 5/9 + 273.15</td>
+                        </tr>
+                        <tr>
+                            <td>Kelvin</td>
+                            <td>Fahrenheit</td>
+                            <td class="factor">(K - 273.15) × 9/5 + 32</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Common Temperature Reference Points</h3>
+                <table class="conversion-table">
+                    <thead>
+                        <tr>
+                            <th>Reference Point</th>
+                            <th>Celsius</th>
+                            <th>Fahrenheit</th>
+                            <th>Kelvin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Absolute Zero</td>
+                            <td>-273.15°C</td>
+                            <td>-459.67°F</td>
+                            <td>0 K</td>
+                        </tr>
+                        <tr>
+                            <td>Water Freezing Point</td>
+                            <td>0°C</td>
+                            <td>32°F</td>
+                            <td>273.15 K</td>
+                        </tr>
+                        <tr>
+                            <td>Room Temperature</td>
+                            <td>20°C</td>
+                            <td>68°F</td>
+                            <td>293.15 K</td>
+                        </tr>
+                        <tr>
+                            <td>Human Body Temperature</td>
+                            <td>37°C</td>
+                            <td>98.6°F</td>
+                            <td>310.15 K</td>
+                        </tr>
+                        <tr>
+                            <td>Water Boiling Point</td>
+                            <td>100°C</td>
+                            <td>212°F</td>
+                            <td>373.15 K</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Brand -->
+    <div class="footer-brand">
+      <h2>⚖️ Metric Converter Pro</h2>
+      <p>
+        Accurate unit conversions, educational resources, and measurement tools
+        all in one reliable place.
+      </p>
+    </div>
+     <div class="footer-container">
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="conversion.html">Conversion Chart</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+
+    <!-- Converters -->
+    <div class="footer-links">
+      <h4>Converters</h4>
+      <ul>
+        <li><a href="length.html">Length</a></li>
+        <li><a href="area.html">Area</a></li>
+        <li><a href="volume.html">Volume</a></li>
+        <li><a href="mass.html">Mass</a></li>
+        <li><a href="temperature.html" class="active">Temperature</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>🌍 Educational Project</p>
+      <p>📚 Built for students & learners</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy;2026 Metric Converter Pro. All rights reserved.</p>
+    <p>Built for accurate and reliable unit conversions</p>
+  </div>
+</footer>
+<script src="JS/main.js"></script>
+<script src="JS/converter.js"></script>
+    </body>
+</html>
